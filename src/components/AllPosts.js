@@ -9,7 +9,7 @@ export class AllPosts extends Component {
 
     return (
       <div>
-        <h1>All Posts</h1>
+        <h1 className="post_heading">All Posts</h1>
         {posts.map(post => (
           <div key={post.id}>
             {post.editing ? <EditComponent key={post.id} post={post} /> : <Post key={post.id} post={post} />}

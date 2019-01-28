@@ -38,9 +38,9 @@ export class PostForm extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Create Post</h1>
-        <form onSubmit={this.handleSubmit}>
+      <div className="post-container">
+        <h1 className="post_heading">Create Post</h1>
+        <form className="form" onSubmit={this.handleSubmit}>
           <input name="title" required type="text" placeholder="Enter title" onChange={this.handleInputChange}/><br /><br />
           <textarea name="body" required rows="5" cols="28" placeholder="Enter body" onChange={this.handleInputChange} /><br /><br />
           <button>Save</button>

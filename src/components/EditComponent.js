@@ -39,9 +39,9 @@ export class EditComponent extends Component {
     const { post } = this.props;
 
     return (
-      <div>
+      <div className="post">
         <h1>Update Post</h1>
-        <form onSubmit={this.handleSubmit}>
+        <form className="form" onSubmit={this.handleSubmit}>
           <input defaultValue={post.title} name="title" required type="text" placeholder="Enter title" onChange={this.handleInputChange}/><br /><br />
           <textarea defaultValue={post.body} name="body" required rows="5" cols="28" placeholder="Enter body" onChange={this.handleInputChange} /><br /><br />
           <button>Save</button>
